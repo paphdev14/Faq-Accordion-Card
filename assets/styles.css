@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+/* Declare variables */
+:root{
+    /* Text */
+    --veryDarkDesaturatedBlue: hsl(238, 29%, 16%);
+    --softRed: hsl(14, 88%, 65%);
+    
+    /* Background gradient: */
+    --softViolet: hsl(273, 75%, 66%);
+    --softBlue: hsl(240, 73%, 65%);
+    
+    /* Text */
+    --veryDarkGrayishBlue: hsl(237, 12%, 33%);
+    --darkGrayishBlue: hsl(240, 6%, 50%);
+    
+    /* Dividers */
+    --lightGrayishBlue: hsl(240, 5%, 91%);
+
+    --radius: 30px;
+}
+
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 14px;
+    background: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+    min-height: calc(100vh - 3rem);
+}
+
+.wrapper{
+    min-height: 100vh;
+}
+
+img{
+    display: block;
+    width: 100%;
+}
+
+.container{
+    background-color: var(--lightGrayishBlue);
+    padding-bottom: 2rem;
+    border-radius: var(--radius);
+    max-width: 400px;
+    margin: 3rem auto;
+    min-height: auto;
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+img{
+    width: 100%;
+    display: block;
+    border-top-left-radius: var(--radius);
+    border-top-right-radius: var(--radius);
+}
+
+.faq-section{
+    padding: 0 1.5rem;
+}
+
+.faq-title h1{
+    text-transform: uppercase;
+    font-size: 2.5rem;
+    line-height: 1;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.faq{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.365rem;
+    margin-bottom: 15px;
+    color: var(--veryDarkDesaturatedBlue);
+}
+
+.question{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    column-gap: 0.65rem;
+}
+
+.answer{
+    color: var(--veryDarkGrayishBlue);
+}
+
+.arrow{
+    display: inline;
+    width: 20px;
+    cursor: pointer;
+}
+
+.faq-lists .answer{
+    display: none;
+}
+
+.arrow-up{
+    display: none;
+}
+
+.separator{
+    height: 1px;
+    background-color: var(--darkGrayishBlue);
+    margin: 10px 0;
+}
+
+/* Dynamic */
+.display-answer .answer{
+    display: block;
+}
+
+
+.display-answer .arrow-down{
+    display: none;
+}
+
+.display-answer .arrow-up{
+    display: inline;
+}
+
+.display-answer p{
+    font-weight: 700;
+}
